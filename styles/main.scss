@@ -1,0 +1,194 @@
+body {
+  height: 100vh;
+  background: blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: url(../pictures/water-funnel.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  text-shadow: 0px 1px 3px rgba(0,0,0,.6)
+}
+
+p.sub-title {
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  text-shadow: 0px 1px 3px rgba(0,0,0,.6)
+}
+
+#contact-container {
+  width: 75vw;
+  min-width: 75rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  padding: .75rem;
+  display: flex;
+  backdrop-filter: blur(1rem);
+  border: 1px solid rgba(255, 255, 255, .4);
+  box-shadow: 0px 10px 33px 0px rgba(0,0,0,.75);
+  .contact-info {
+    background: #014c72;
+    border-radius: 1rem;
+    flex: 0 1 40%;
+    padding: 2.5rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    h4 {
+      font-size: 2rem;
+      font-weight: 500;
+      margin: 0;
+    }
+    p {
+      color: rgba(255,255,255,.8);
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin-top: .25em;
+      margin-bottom: 3rem;
+    }
+    .icon-text {
+      display: inline-flex;
+      align-items: center;
+      .contact-icon {
+        color: #05f7ff;
+        font-size: 1.5rem;
+        padding: .25em;
+        margin-right: .5em;
+      }
+    }
+    .social-media {
+      display: flex;
+      width: 50%;
+      justify-content: space-between;
+      margin-top: 3rem;
+      .icon-circle {
+        display: flex;
+        flex: 0 0 2.5rem;
+        justify-content: center;
+        align-items: center;
+        height: 2.5rem;
+        border-radius: 50%;
+        transition: .3s all ease-in-out;
+        &:hover {
+          background: #05f7ff;
+        }
+      }
+      .social-icon {
+        color: white;
+        padding: .5em;
+        font-size: 1.2rem;
+      }
+    }
+  }
+  form {
+    width: 100%;
+    padding: 1em 2rem;
+    .col {
+      display: flex;
+      width: 100%;
+      flex: 0 0 100%;
+    }
+    .form-group {
+      display: flex;
+      flex: 0 0 50%;
+      justify-content: flex-start;
+      flex-direction: column;
+      padding-right: 1rem;
+      label {
+        font-size: .9rem;
+        color: rgba(255,255,255,.8);
+        margin-bottom: 1rem;
+      }
+      input[type="text"], input[type="tel"], input[type="email"], textarea {
+        border: none;
+        cursor: pointer;
+        color: white;
+        padding: .5rem;
+        font-size: 1rem;
+        font-weight: 300;
+        background: transparent;
+        border-bottom: 1px solid rgba(255,255,255,.4);
+        transition: all .3s ease-in-out;
+        margin-bottom: 2rem;
+        &:focus {
+          border: none;
+          outline: none;
+          border-bottom: 1px solid #05f7ff;
+        }
+      }
+      &:nth-child(2) {
+        padding-right: 0;
+      }
+      .radio-buttons {
+        display: inline-flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        .radio-btn input {
+          margin-right: 1em;
+        }
+        input[type="radio"]:checked + label {
+          color: white;
+          font-weight: bold;
+        }
+      }
+      &.right{
+        align-items: flex-end;
+      }
+      button {
+        width: 12rem;
+        height: 2rem;
+        cursor: pointer;
+      }
+    }
+    .solo {
+      display: flex;
+      flex: 0 0 100%;
+      justify-content: flex-start;
+      flex-direction: column;
+      textarea {
+        width: 100% !important;
+        border: none;
+        cursor: pointer;
+        color: white;
+        padding: .5rem;
+        font-size: 1rem;
+        font-weight: 300;
+        background: transparent;
+        border-bottom: 1px solid rgba(255,255,255,.4);
+        transition: all .3s ease-in-out;
+        &:focus {
+          border: none;
+          outline: none;
+          border-bottom: 1px solid #05f7ff;
+        }
+      }
+      label {
+        font-size: .9rem;
+        color: rgba(255,255,255,.8);
+        margin-bottom: 1rem;
+      }
+      &.right {
+        align-items: flex-end;
+      }
+      button {
+        width: 12rem;
+        height: 2rem;
+        color: white;
+        cursor: pointer;
+        background: #014c72;
+        border: none;
+        text-transform: uppercase;
+        border-radius: .25rem;
+      }
+    }
+  }
+}
